@@ -16,4 +16,9 @@ public class DenunciaController {
         return service.salvar(denuncia);
     }
 
+    @PostMapping
+    public Denuncia fechar(@RequestBody Denuncia denuncia) {
+        return  service.fechar(denuncia);
+    }
+
 }
